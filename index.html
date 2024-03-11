@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./index.css">
+        <title>Encriptador de texto</title>
+    </head>
+    <body>
+        <header>
+            <img src="./assets/logo-alura.png" alt="logo-alura">
+        </header>
+        <main>
+            <section class="seccion-inicial">
+                <div class="contenedor-texto">
+                    <textarea name="" id="" placeholder="Ingrese el texto aquí..." cols="30" rows="10"></textarea>
+                </div>
+                <div class="contenedor-mensaje">
+                    <img src="./assets/boton-de-informacion.png" alt="info">
+                    <p>Solo letras minúsculas y sin acentos.</p>
+                </div>
+                <div class="contenedor-botones">
+                    <input class="btn-encriptar" type="button" value="Encriptar">
+                    <input class="btn-desencriptar" type="button" value="Desencriptar">
+                </div>
+            </section>
+            <section class="seccion-resultado">
+                <div class="contenedor-error">
+                    <div class="contenedor-imagen">
+                        <img src="./assets/logo-alura.png" alt="">
+                    </div>
+                    <h3>Ningún mensaje fue encontrado</h3>
+                    <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+                </div>
+                <div class="contenedor-resultado">
+                    <p class="texto-resultado"></p>
+                </div>
+                <div class="contenedor-copiar">
+                    <input class="btn-copiar" type="button" value="Copiar">
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p class="copyright">&copy; Copyright - 2024 - Encriptador de texto - desarrollado por Juan Manuel Pascual Navarro</p>
+            <a href="#" rel="">
+                <img src="./assets/linkedin.png" class="logoLinkedIn" alt="Logo LinkedIn">
+            </a>
+            <a href="#" rel="">
+                <img src="./assets/github.png" class="logoGithub" alt="Logo Github">
+            </a>
+        </footer>
+        <script type="module" src="./index.js"></script>
+    </body>
+</html>

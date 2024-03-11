@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+::placeholder {
+    color: #0A3871;
+}
+
+body {
+    width: 100%;
+    background: #F3F5FC;
+}
+
+header {
+    width: 100%;
+    height: 68px;
+}
+
+header img {
+    padding: 10px 0px;
+}
+
+main {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 30px;
+}
+
+.seccion-inicial {
+    width: 70%;
+    padding: 20px 30px;
+}
+
+.contenedor-texto {
+    width: 100%;
+    height: calc(100% - 74px);
+}
+
+.contenedor-mensaje {
+    width: 100%;
+    display: flex;
+    margin: 10px 0px;
+    font-size: 14px;
+}
+
+.contenedor-mensaje img {
+    margin-right: 10px;
+}
+
+.contenedor-texto textarea {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: none;
+    resize: none;
+    font-size: 32px;
+    color: #0A3871;
+    outline: none;
+}
+
+.contenedor-botones {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor-botones .btn-encriptar {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #0A3871;
+    cursor: pointer;
+    color: #F3F5FC;
+    margin-right: 20px;
+}
+
+.contenedor-botones .btn-desencriptar {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    background-color: unset;
+    cursor: pointer;
+    border-color: 1px solid #0A3871;
+    color: #0A3871;
+}
+
+.seccion-resultado {
+    position: relative;
+    width: 30%;
+    height: calc(100dvh - 185px);
+    background: #FFFFFF;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.contenedor-error {
+    position: absolute;
+    width: calc(100% - 40px);
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.contenedor-resultado {
+    height: calc(100% - 80px);
+    margin-bottom: 30px;
+    overflow: auto;
+}
+
+.contenedor-copiar .btn-copiar {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    background-color: unset;
+    cursor: pointer;
+    border-color: 1px solid #0A3871;
+    color: #0A3871;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin: 20px 50px;
+    text-align: center;
+    align-items: center;
+}
+
+.copyright {
+    margin-right: 10px;
+}
+
+.logoLinkedIn {
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 960px) {
+    body {
+        width: 100%;
+    }
+
+    main {
+        display: block;
+    }
+
+    .seccion-inicial {
+        width: auto;
+        margin: 40px 0px;
+        padding: 0px;
+    }
+
+    .contenedor-texto textarea {
+        height: calc(100dvh - 232px);
+    }
+
+    .seccion-resultado {
+        width: auto;
+        height: calc(100dvh - 170px);
+    }
+
+    footer {
+        display: block;
+    }
+
+    .copyright {
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        width: 100%;
+    }
+
+    main {
+        display: block;
+    }
+
+    .seccion-inicial {
+        width: auto;
+        margin: 40px 0px;
+        padding: 0px;
+    }
+
+    .contenedor-texto textarea {
+        height: calc(100dvh - 300px);
+    }
+
+    .contenedor-botones {
+        display: block;
+    }
+
+    .contenedor-botones .btn-encriptar {
+        margin-bottom: 20px;
+    }
+
+    .seccion-resultado {
+        width: auto;
+        height: calc(100dvh - 210px);
+    }
+}
