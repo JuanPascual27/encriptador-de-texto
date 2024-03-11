@@ -102,12 +102,23 @@ main {
     top: 50%;
     transform: translateY(-50%);
     text-align: center;
+    margin: 10px 0px;
+}
+
+.contenedor-error h3 {
+    margin: 10px 0px;
 }
 
 .contenedor-resultado {
     height: calc(100% - 80px);
     margin-bottom: 30px;
     overflow: auto;
+    font-size: 22px;
+    display: none;
+}
+
+.contenedor-copiar {
+    display: none;
 }
 
 .contenedor-copiar .btn-copiar {
